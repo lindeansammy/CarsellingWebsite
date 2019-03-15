@@ -1,0 +1,117 @@
+html, html * {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.button {
+    border: 2px solid #fff;
+    padding: 8px 30px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+}
+
+.driveHome {
+    background-image: url(../../../../images/driveHome.jpg);
+    background-size: cover;
+    padding: 20px 20px 50px 20px;
+}
+
+
+.maintain {
+    background-size: cover;
+    padding: 30px 20px 60px;
+    text-align: center;
+    background-image: url(../../../../images/maintain.jpg);
+}
+
+.repair {
+    background-size: cover;    
+    padding: 30px 20px 60px;
+    text-align: center;
+    background-image: url(../../../../images/repair1.jpg);
+}
+
+.bodyWork {
+    background-size: cover;
+    padding: 30px 20px 60px;
+    text-align: center;
+    background-image: url(../../../../images/bodyWork.jpg);
+}
+
+.carWash {
+    background-size: cover;
+    padding: 30px 20px 60px;
+    text-align: center;
+    background-image: url(../../../../images/carWash2.jpg);
+}
+
+.takeKey {
+    background-size: cover;
+    padding: 30px 20px 60px;
+    text-align: center;
+    background-image: url(../../../../images/takeKey.jpg);
+}
+.col {
+    width: 100%;
+}
+
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/*tablet view*/
+@media (min-width:768px) {
+    body {
+        max-width: 778px;
+    }
+
+    .title_h1 {
+        font-size: 40px;
+        margin-bottom: 90px;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    .col {
+        float: left;
+        padding: 0 7px 14px;
+    }
+
+    .col-md-one-half {
+        width: 50%;
+    }
+}
+
+/*desktop view*/
+@media (min-width:1024px) {
+    body {
+        max-width: 100%;
+    }
+    .col-lg-one-fourth {
+        width: 25%;
+    }
+}
+
+.text{
+    
+    padding:30px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    border-radius: 30px;
+}
+.text2{
+    background-color: grey;
+    border-radius: 30px;
+    color:white;
+}

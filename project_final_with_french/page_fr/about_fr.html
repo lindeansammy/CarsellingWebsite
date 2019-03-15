@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr-ca" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--search engine optimization-->
+	<meta name="description" content="Au sujet de l'information automatique de NHYL">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <!-- end search engine optimization-->
+    <title>&Agrave; propos de nous</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="../styles/css/project.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/main.js"></script> <!-- car list script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--jquery cdn for contact popup-->
+    <style>
+        @media only screen and (max-width: 320px) {
+            /*
+            #contact {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                margin: 4em auto;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                background: teal;
+                color: white;
+                font-weight: 700;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid white;
+                position: fixed;
+                top: 80%;
+                left: -80%;
+                margin-bottom: 0;
+                transform: rotate(0deg);
+            } */
+
+            #contactForm {
+                display: none;
+                border: 6px solid #0094ff;
+                padding: 4em;
+                text-align: center;
+                background: #fff;
+                position: fixed;
+                top: 20%;
+                left: -20%;
+                transform: scale(0.5, 0.5);
+                -webkit-transform: scale(0.5, 0.5);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- header -->
+        <header>
+            <div id="compName" class="text-center">
+                <h1 id="mainName" style="font-family:'Shrikhand', cursive;">NHYL Auto</h1>
+            </div>
+            <nav id="myNav" class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-list-ul fa-2x"></i><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item active font-weight-bold"><a class="nav-link text-secondary" href="index_fr.html"><i class="fa fa-home"></i>Accueil</a></li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="listItems_fr.html"><i class="fa fa-car"></i>Voitures</a>
+                            <div id="drop_item_div" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Tous les v&eacute;hicules</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('sedan')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Sedan</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Hatchback')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Hatchback</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Suv')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Vus</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Minivan')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Fourgonette</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Sports')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Sports</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="service_fr.html"><i class="fa fa-server"></i>Service</a>
+                            <div id="drop_item_div_s" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-maintain"><i class="fa fa-caret-right"></i>&nbsp;Entretien</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-repair"><i class="fa fa-caret-right"></i>&nbsp;R&eacute;paration</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-bodyWork"><i class="fa fa-caret-right"></i>&nbsp;Carrosserie</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-carWash"><i class="fa fa-caret-right"></i>&nbsp;Lave-auto</a>
+                            </div>
+                        </li>
+                        <li class="nav-item font-weight-bold"><a class="nav-link text-secondary" href="about_fr.html"><i class="fa fa-users"></i>&Agrave; propos de nous</a></li>
+                    </ul>
+                </div>
+                <form action="../about.html">
+                    <button id="btn_en" class="btn btn-link navbar-right mr-4 font-weight-bold " type="submit">En</button>
+                </form>
+            </nav>
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item ml-5"><a href="index_fr.html">Accueil</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">&Agrave; propos de nous</li>
+                </ol>
+            </nav>
+        </header>
+        <!-- end header -->
+        <!-- start main -->
+        <article id="abt_container">
+            <div id="mv_container" class="shadow p-3 mb-5 bg-white rounded row container-fluid">
+                <div id="left-col" class="col-sm">
+                    <img class="img-fluid" src="../images/team.jpg" alt="Founders" />
+                </div>
+                <div id="mission_vision" class="col-sm text-center">
+                    <div id="mission">
+                        <h3 style="font-family: 'Lobster', cursive;">Mission</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id luctus nisi.
+                            Quisque sed risus non augue aliquet scelerisque in placerat felis. Aliquam at ultrices risus.
+                            Fusce ac auctor libero. Quisque sit amet orci ut massa elementum mollis. Sed odio turpis, congue
+                            at dignissim sed, aliquam a dui. Integer tempus eros rutrum, dictum tortor ac, scelerisque sem.
+                            Duis eu tristique neque, et rhoncus massa. Vivamus ornare magna id massa tempor vehicula. Proin
+                            eu eros pulvinar, sodales justo quis, placerat augue. Nulla tempor scelerisque lacus sed convallis.
+                            Vestibulum sit amet luctus arcu. Integer faucibus libero nec risus auctor, vel efficitur mi faucibus.
+                            Cras metus nisi, faucibus quis ante sed, interdum imperdiet arcu.
+                        </p>
+                    </div>
+                    <br />
+                    <hr />
+                    <div id="vission">
+                        <h3 style="font-family: 'Lobster', cursive;">Vision</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id luctus nisi.
+                            Quisque sed risus non augue aliquet scelerisque in placerat felis. Aliquam at ultrices risus.
+                            Fusce ac auctor libero. Quisque sit amet orci ut massa elementum mollis. Sed odio turpis, congue
+                            at dignissim sed, aliquam a dui. Integer tempus eros rutrum, dictum tortor ac, scelerisque sem.
+                            Duis eu tristique neque, et rhoncus massa. Vivamus ornare magna id massa tempor vehicula. Proin
+                            eu eros pulvinar, sodales justo quis, placerat augue. Nulla tempor scelerisque lacus sed convallis.
+                            Vestibulum sit amet luctus arcu. Integer faucibus libero nec risus auctor, vel efficitur mi faucibus.
+                            Cras metus nisi, faucibus quis ante sed, interdum imperdiet arcu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="cards" class="row mb-5">
+                <div class="shadow p-3 card float-left mx-auto" style="width: 18rem;" onmouseover="cardHighlight(this)" onmouseout="cardUnHighlight(this)">
+                    <img class="card-img-top" src="../images/card_help.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <img class="bg-white img-center img-fluid" src="../images/icon_help.png" alt="help icon" />
+                        <h5>
+                            Laissez-nous vous aider.
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id luctus nisi.</p>
+                    </div>
+                </div>
+                <div class="shadow p-3 card float-left mx-auto" style="width: 18rem;" onmouseover="cardHighlight(this)" onmouseout="cardUnHighlight(this)">
+                    <img class="card-img-top" src="../images/card_office.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <img class="bg-white img-center img-fluid" src="../images/icon_us.jpg" alt="people icon" />
+                        <h5>Nos emplacements</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id luctus nisi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myTimeline" class="rounded shadow p-3">
+                <h6 class="text-center">Une Histoire Br&egrave;ve</h6>
+                <div id="timeScroll">
+                    <ul id="timelineTable" class="timeline">
+                        <!-- Item 1 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag">Lorem ipsum.</span>
+                                    <span class="time-wrapper"><span class="time">Feb 2018</span></span>
+                                </div>
+                                <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+                            </div>
+                        </li>
+
+                        <!-- Item 2 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag">Lorem ipsum Anim.</span>
+                                    <span class="time-wrapper"><span class="time">Dec 2017</span></span>
+                                </div>
+                                <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+                            </div>
+                        </li>
+
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag">Lorem Occaecat.</span>
+                                    <span class="time-wrapper"><span class="time">July 2016</span></span>
+                                </div>
+                                <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+                            </div>
+                        </li>
+
+                        <!-- Item 4 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag">
+                                        Fondé
+                                    </span>
+                                    <span class="time-wrapper"><span class="time">October 2015</span></span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card text-center mt-4">
+                <div class="card-header">
+                    <img class="img-fluid w-100" src="../images/browse.png" alt="car banner" />
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Un grand merci de notre équipe!
+                    </h5>
+                    <p class="card-text">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim </p>
+                    <a href="listItems_fr.html" class="btn btn-primary">
+                        Parcourez notre inventaire
+                    </a>
+                </div>
+            </div>
+        </article>
+        <!--End main -->
+        <!-- footer -->
+        <footer id="footer">
+            <div class="table-responsive" id="divReset">
+                <table class="table">
+                    <tr class="row">
+                        <td id="about" class="col-sm">
+                            <ul>
+                                <li><b>Sur</b></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="sitmap_fr.html">Sitemap</a></li>
+                                <li><a href="#">Politique de confidentialité</a></li>
+                                <li><a href="#">Termes et conditions</a></li>
+                            </ul>
+                        </td>
+                        <td id="address" class="col-sm">
+                            <b>Emplacement</b><br>
+                            <div class="col-sm">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37686.81288221143!2d-73.96580146302851!3d45.4075422919234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc938500caad3a7%3A0xd807d74a59dcffcf!2sJohn+Abbott+College!5e0!3m2!1sen!2sca!4v1529528326401" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td id="hours" class="col-sm">
+
+                            <ul>
+                                <li><b>Heures de travail</b></li>
+                                <li style="font-size:1.5vw;">Lundi à Samedi: 11:00 am - 6:00 pm</li>
+                                <li style="font-size:1.5vw;">Dimanche: Ferm&eacute;</li>
+                            </ul>
+                        </td>
+                        <td id="socialMedia" class="col-sm">
+                            <b style="float: inherit">Des m&eacute;dias sociaux</b><br>
+                            <a href="#" class="fa fa-facebook-square wise" id="wise1"></a>
+                            <a href="#" class="fa fa-twitter wise" id="wise2"></a>
+                            <a href="#" class="fa fa-google-plus wise" id="wise3"></a>
+                            <a href="#" class="fa fa-instagram wise" id="wise4"></a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="copyRight" class="no-gutter">
+                &copy; 2018 NHYL Auto - Tous droits r&eacute;serv&eacute;s.
+                Toute reproduction, en tout ou en partie, est strictement interdite sans le consentement explicite de NHYL Auto.
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- contact popup-->
+        <div id="contactContainer">
+            <div id="contact">Contact</div>
+
+            <div id="contactForm">
+
+                <h1>
+                    Se renseigner maintenant
+                </h1>
+                <small>Nous sommes heureux d'avoir de vos nouvelles.</small>
+
+                <form id="myForm" action="#">
+                    <input class="form-control" placeholder="Nom" type="text" required />
+                    <input class="form-control" placeholder="Email" type="email" required />
+                    <input class="form-control" placeholder="Sujet" type="text" required />
+                    <textarea class="form-control" placeholder="Commentaire"></textarea>
+                    <input class="form-control" id="formBtnSubmit" type="submit" value="Soumettre"/>
+                    <input class="form-control" id="formBtnReset" type="reset" value="R&eacute;initialiser"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/popup.js"></script> <!-- contact popup script-->
+    <script src="../scripts/about_script.js"></script>
+</body>
+</html>

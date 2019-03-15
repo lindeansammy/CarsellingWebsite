@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--search engine optimization-->
+    <meta name="description" content="Home page for NHYL auto">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <!-- end search engine optimization-->
+    <title>Home | NHYL Auto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="styles/css/project.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!-- contact popup-->
+    <style>
+        @media only screen and (max-width: 320px) {
+            /*
+            #contact {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                margin: 4em auto;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                background: teal;
+                color: white;
+                font-weight: 700;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid white;
+                position: fixed;
+                top: 80%;
+                left: -80%;
+                margin-bottom: 0;
+                transform: rotate(0deg);
+            } */
+
+            #contactForm {
+                display: none;
+                border: 6px solid #0094ff;
+                padding: 4em;
+                text-align: center;
+                background: #fff;
+                position: fixed;
+                top: 20%;
+                left: -20%;
+                transform: scale(0.5, 0.5);
+                -webkit-transform: scale(0.5, 0.5);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div id="container">
+        <!-- header -->
+        <header>
+            <div id="compName" class="text-center">
+                <h1 id="mainName" style="font-family:'Shrikhand', cursive;">NHYL Auto</h1>
+            </div>
+            <nav id="myNav" class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-list-ul fa-2x"></i><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item active font-weight-bold"><a class="nav-link text-secondary" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="listItems.html"><i class="fa fa-car"></i>Cars</a>
+                            <div id="drop_item_div" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Browse all</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('sedan')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Sedan</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Hatchback')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Hatchback</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Suv')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Suv</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Minivan')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Minivan</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Sports')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Sports</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="service.html"><i class="fa fa-server"></i>Service</a>
+                            <div id="drop_item_div_s" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-maintain"><i class="fa fa-caret-right"></i>&nbsp;Maintain</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-repair"><i class="fa fa-caret-right"></i>&nbsp;Repair</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-bodyWork"><i class="fa fa-caret-right"></i>&nbsp;Bodywork</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-carWash"><i class="fa fa-caret-right"></i>&nbsp;Car Wash</a>
+                            </div>
+                        </li>
+                        <li class="nav-item font-weight-bold"><a class="nav-link text-secondary" href="about.html"><i class="fa fa-users"></i>About us</a></li>
+                    </ul>
+                </div>
+                <form action="page_fr/index_fr.html">
+                    <button id="btn_en" class="btn btn-link navbar-right mr-4 font-weight-bold " type="submit">Fr</button>
+                </form>
+            </nav>
+        </header>
+        <!-- end header -->
+        <!-- content-->
+        <article>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/intro.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/suv.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/sports.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="typeCar_div" class="card-deck mt-4">
+                <div class="hovereffect border-0 card text-center">
+                    <img class="img-responsive card-img-top mt-5" src="images/listed_sedan.png" alt="Card image cap">
+                    <a onclick="getsend('sedan')" target=_blank href="listItems.html">
+                        <div class="overlay card-body">
+                            <h5 class="card-text">
+                                Sedan
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="hovereffect border-0 card text-center">
+                    <img class="img-responsive card-img-top" src="images/listed_suv.png" alt="Card image cap">
+                    <a onclick="getsend('Suv')" target=_blank href="listItems.html">
+                        <div class="overlay card-body">
+                            <h5 class="card-text">SUV</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="hovereffect border-0 card text-center">
+                    <img class="img-responsive card-img-top" src="images/listed_minivan.png" alt="Card image cap">
+                    <a onclick="getsend('Minivan')" target=_blank href="listItems.html">
+                        <div class="overlay card-body">
+                            <h5 class="card-text">MINI-VANS</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="hovereffect border-0 card text-center">
+                    <img class="img-responsive card-img-top" src="images/listed_hatchback.png" alt="Card image cap">
+                    <a onclick="getsend('Hatchback')" target=_blank href="listItems.html">
+                        <div class="overlay card-body">
+                            <h5 class="card-text">HATCHBACK</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="hovereffect border-0 card text-center">
+                    <img class="img-responsive card-img-top mt-5" src="images/listed_sports.png" alt="Card image cap">
+                    <a onclick="getsend('Sports')" target=_blank href="listItems.html">
+                        <div class="overlay card-body">
+                            <h5 class="card-text">SPORTS</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card text-center bg-light mt-3">
+                <div class="card-body">
+                    <h2 class="card-title" style="font-family:'Shrikhand', cursive;">NHYL Auto</h2>
+                    <p class="card-text">As of 2015, Microsoft is market-dominant in the IBM PC-compatible operating system market and the office software suite market, although it has lost the majority of the overall operating system market to Android.[9] The company also produces a wide range of other consumer and enterprise software for desktops and servers, including Internet search (with Bing), the digital services market (through MSN), mixed reality (HoloLens), cloud computing (Azure) and software development (Visual Studio).</p>
+                </div>
+            </div>
+        </article>
+        <!-- end content-->
+        <!-- footer -->
+        <footer id="footer">
+            <div class="table-responsive" id="divReset">
+                <table class="table">
+                    <tr class="row">
+                        <td id="about" class="col-sm">
+
+                            <ul>
+                                <li><b>About</b></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="sitmap.html">Sitemap</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Terms and conditions</a></li>
+                            </ul>
+                        </td>
+                        <td id="address" class="col-sm">
+                            <b>Location</b><br>
+                            <div class="col-sm">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37686.81288221143!2d-73.96580146302851!3d45.4075422919234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc938500caad3a7%3A0xd807d74a59dcffcf!2sJohn+Abbott+College!5e0!3m2!1sen!2sca!4v1529528326401" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td id="hours" class="col-sm">
+                            <p><b>Business hours</b></p>
+                            <ul class="list-group">
+                                <li style="font-size:1.5vw;">Monday to Saturday from 10:30 am - 6:00 pm</li>
+                                <li style="font-size:1.5vw;">Sunday: Closed</li>
+                            </ul>
+                        </td>
+                        <td id="socialMedia" class="col-sm">
+                            <b style="float: inherit">Social Media</b><br>
+                            <a href="#" class="fa fa-facebook-square wise" id="wise1"></a>
+                            <a href="#" class="fa fa-twitter wise" id="wise2"></a>
+                            <a href="#" class="fa fa-google-plus wise" id="wise3"></a>
+                            <a href="#" class="fa fa-instagram wise" id="wise4"></a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="copyRight" class="no-gutter">
+                &copy; 2018 NHYL Auto - All rights reserved.
+                All reproduction in whole or in part, is strictly prohibited without the explicit consent of NHYL  Auto.
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- contact popup-->
+        <div id="contactContainer">
+            <div id="contact">Contact</div>
+
+            <div id="contactForm">
+
+                <h1>Inquire now</h1>
+                <small>We are happy to hear from you.</small>
+
+                <form id="myForm" action="#">
+                    <input class="form-control" placeholder="Name" type="text" required />
+                    <input class="form-control" placeholder="Email" type="email" required />
+                    <input class="form-control" placeholder="Subject" type="text" required />
+                    <textarea class="form-control" placeholder="Comment"></textarea>
+                    <input class="form-control" id="formBtnSubmit" type="submit" />
+                    <input class="form-control" id="formBtnReset" type="reset" />
+                </form>
+            </div>
+        </div>
+        <script src="scripts/popup.js"></script> <!-- contact popup script-->
+    </div>
+</body>
+</html>

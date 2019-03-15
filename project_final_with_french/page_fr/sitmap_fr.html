@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <!--search engine optimization-->
+	<meta name="description" content="Informations détaillées sur la voiture automatique NHYL">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <!-- end search engine optimization-->
+    <title>
+        D&eacute;tail de la voiture
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="../styles/css/project.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/css/jcarousel.connected-carousels.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="http://www.js-css.cn/jscode/jscode.css" rel="stylesheet" />
+    <script src="http://www.js-css.cn/jscode/jquery.min.js"></script>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/jquery.jcarousel.min.js"></script>
+    <script src="../scripts/jcarousel.connected-carousels.js"></script>
+    <style>
+        @media only screen and (max-width: 320px) {
+            /*
+            #contact {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                margin: 4em auto;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                background: teal;
+                color: white;
+                font-weight: 700;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid white;
+                position: fixed;
+                top: 80%;
+                left: -80%;
+                margin-bottom: 0;
+                transform: rotate(0deg);
+            } */
+
+            #contactForm {
+                display: none;
+                border: 6px solid #0094ff;
+                padding: 4em;
+                text-align: center;
+                background: #fff;
+                position: fixed;
+                top: 20%;
+                left: -20%;
+                transform: scale(0.5, 0.5);
+                -webkit-transform: scale(0.5, 0.5);
+            }
+
+
+
+        }
+    </style>
+
+</head>
+<body  onload="slideShow()">
+
+
+    <div id="container">
+        <!-- header -->
+        <header>
+            <div id="compName" class="text-center">
+                <h1 id="mainName" style="font-family:'Shrikhand', cursive;">NHYL Auto</h1>
+            </div>
+            <nav id="myNav" class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-list-ul fa-2x"></i><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item active font-weight-bold"><a class="nav-link text-secondary" href="index_fr.html"><i class="fa fa-home"></i>Accueil</a></li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="listItems_fr.html"><i class="fa fa-car"></i>Voitures</a>
+                            <div id="drop_item_div" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Tous les v&eacute;hicules</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('sedan')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Sedan</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Hatchback')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Hatchback</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Suv')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Vus</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Minivan')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Fourgonette</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Sports')" target=_blank href="listItems_fr.html"><i class="fa fa-caret-right"></i>&nbsp;Sports</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="service_fr.html"><i class="fa fa-server"></i>Service</a>
+                            <div id="drop_item_div_s" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-maintain"><i class="fa fa-caret-right"></i>&nbsp;Entretien</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-repair"><i class="fa fa-caret-right"></i>&nbsp;R&eacute;paration</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-bodyWork"><i class="fa fa-caret-right"></i>&nbsp;Carrosserie</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service_fr.html#anchor-carWash"><i class="fa fa-caret-right"></i>&nbsp;Lave-auto</a>
+                            </div>
+                        </li>
+                        <li class="nav-item font-weight-bold"><a class="nav-link text-secondary" href="about_fr.html"><i class="fa fa-users"></i>&Agrave; propos de nous</a></li>
+                    </ul>
+                </div>
+                <form action="../sitmap.html">
+                    <button id="btn_en" class="btn btn-link navbar-right mr-4 font-weight-bold " type="submit">En</button>
+                </form>
+            </nav>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item ml-5"><a href="index_fr.html">Accueil</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">SiteMap</li>
+                </ol>
+            </nav>
+        </header>
+        <!-- end header -->
+        <!-- content-->
+       <div class="container">
+	               <h2>Site Map</h2>
+	               <div class="row ml-2">
+	                   <div class="col-md-2">
+	                       <h5><a href="index_fr.html">Accueil</a></h5>
+	                   </div>
+	                   <div class="col-md-2">
+	                       <h5><a href="listItems_fr.html">Voitures</a></h5>
+	                       <ul>
+	                           <li><a href="cardetail_fr.html">CarDetail</a></li>
+	                       </ul>
+	                   </div>
+	                   <div class="col-md-2">
+	                       <h5><a href="service_fr.html">Service</a></h5>
+	                       <ul>
+	                           <li><a href="service_fr.html#anchor-maintain">Entretien</a></li>
+	                           <li><a href="service_fr.html#anchor-repair">R&eacute;paration</a></li>
+	                           <li><a href="service_fr.html#anchor-bodyWork">Carrosserie</a></li>
+	                           <li><a href="service_fr.html#anchor-carWash">Lave-auto</a></li>
+	                       </ul>
+	                   </div>
+	                   <div class="col-md-2">
+	                       <h5><a href="about_fr.html">&Agrave;propos de nous</a></h5>
+	                   </div>
+	                   <div class="col-md-2">
+	                       <h5><a href="contact_fr.html">Contactez-nous</a></h5>
+	                   </div>
+	               </div>
+        </div>
+        <!-- end content-->
+        <!-- footer -->
+        <footer id="footer">
+            <div class="table-responsive" id="divReset">
+                <table class="table">
+                    <tr class="row">
+                        <td id="about" class="col-sm">
+                            <ul>
+                                <li><b>Sur</b></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="sitmap_fr.html">Sitemap</a></li>
+                                <li><a href="#">Politique de confidentialité</a></li>
+                                <li><a href="#">Termes et conditions</a></li>
+                            </ul>
+                        </td>
+                        <td id="address" class="col-sm">
+                            <b>Emplacement</b><br>
+                            <div class="col-sm">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37686.81288221143!2d-73.96580146302851!3d45.4075422919234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc938500caad3a7%3A0xd807d74a59dcffcf!2sJohn+Abbott+College!5e0!3m2!1sen!2sca!4v1529528326401" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td id="hours" class="col-sm">
+
+                            <ul><li><b>Heures de travail</b></li>
+                                <li style="font-size:1.5vw;">Lundi à Samedi: 11:00 am - 6:00 pm</li>
+                                <li style="font-size:1.5vw;">Dimanche: Ferm&eacute;</li>
+                            </ul>
+                        </td>
+                        <td id="socialMedia" class="col-sm">
+                            <b style="float: inherit">Des m&eacute;dias sociaux</b><br>
+                            <a href="#" class="fa fa-facebook-square wise" id="wise1"></a>
+                            <a href="#" class="fa fa-twitter wise" id="wise2"></a>
+                            <a href="#" class="fa fa-google-plus wise" id="wise3"></a>
+                            <a href="#" class="fa fa-instagram wise" id="wise4"></a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="copyRight" class="no-gutter">
+                &copy; 2018 NHYL Auto - Tous droits r&eacute;serv&eacute;s.
+                Toute reproduction, en tout ou en partie, est strictement interdite sans le consentement explicite de NHYL Auto.
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- contact popup-->
+        <div id="contactContainer">
+            <div id="contact">Contact</div>
+
+            <div id="contactForm">
+
+                <h1>
+                    Se renseigner maintenant
+                </h1>
+                <small>Nous sommes heureux d'avoir de vos nouvelles.</small>
+
+                <form id="myForm" action="#">
+                    <input class="form-control" placeholder="Nom" type="text" required />
+                    <input class="form-control" placeholder="Email" type="email" required />
+                    <input class="form-control" placeholder="Sujet" type="text" required />
+                    <textarea class="form-control" placeholder="Commentaire"></textarea>
+                    <input class="form-control" id="formBtnSubmit" type="submit" value="Soumettre" />
+                    <input class="form-control" id="formBtnReset" type="reset" value="R&eacute;initialiser" />
+                </form>
+            </div>
+        </div>
+        <script src="../scripts/popup.js"></script> <!-- contact popup script-->
+    </div>
+</body>
+</html>

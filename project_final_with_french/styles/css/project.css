@@ -1,0 +1,788 @@
+/*general style for project*/
+/* line 4, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#introduction {
+  text-align: center;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-size-adjust: inherit;
+}
+
+/* line 11, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#vincentTable tr, #vincentTable td {
+  border: 3px solid #161616;
+  height: auto;
+}
+
+/* line 16, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#vincentTable {
+  color: whitesmoke;
+  background-color: #161616;
+  width: 100%;
+}
+
+/* line 23, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 27, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#copyRight {
+  margin-top: -20px;
+  background-color: black;
+  color: whitesmoke;
+  height: 80px;
+}
+
+/* line 33, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#hours {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #161616;
+}
+
+/* line 39, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#socialMedia {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #161616;
+}
+
+/* line 44, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#about {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #161616;
+}
+
+/* line 49, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#address {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #161616;
+}
+
+/* line 55, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#compName {
+  margin-bottom: 0px;
+  background: linear-gradient(to right, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.3));
+}
+
+/* line 60, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#myNav {
+  margin-top: -8px;
+  background: linear-gradient(to right, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.3));
+}
+
+/* weimin 2018-06-22 */
+/* line 66, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#myNav ul li {
+  font-size: 1.5em;
+  margin-left: 50px;
+}
+
+/* line 71, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#typeCar_div {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 76, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.pre {
+  border: 1px solid #000;
+  overflow-x: auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 84, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.wrapper {
+  float: left;
+  max-width: 620px;
+  padding: 0 20px 40px 20px;
+  margin-left: 20%;
+}
+
+/* line 90, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#info_div {
+  float: left;
+  margin-left: 2%;
+  border: 1px solid black;
+}
+
+/****************/
+/* line 96, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#carouselExampleIndicators {
+  height: auto;
+}
+
+/* line 100, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#mainName {
+  text-shadow: 2px 2px 4px #fff;
+}
+
+/* line 104, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+hr {
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+/* line 113, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+/* line 124, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#wise1, #wise2, #wise3, #wise4 {
+  font-size: 1.2em;
+}
+
+/* line 129, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#divReset {
+  overflow: hidden;
+}
+
+/* about us main style */
+/* line 135, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#myTimeline {
+  background: linear-gradient(to bottom, #bcbcbc, #fff);
+}
+
+/* line 139, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#abt_container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* line 144, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#mv_container, #cards {
+  width: 100%;
+  margin: auto;
+}
+
+/* line 149, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.img-center {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #0094ff;
+  border-radius: 100%;
+  margin-top: -45px;
+  padding: 5px;
+}
+
+/*timeline style*/
+/* line 163, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#timeScroll {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 171, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#timeScroll ul {
+  height: 300%;
+  /* Starting position */
+  -moz-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  /* Apply animation to this element */
+  -moz-animation: scroll-up 20s linear infinite;
+  -webkit-animation: scroll-up 20s linear infinite;
+  animation: scroll-up 30s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+  0% {
+    -moz-transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-up {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@keyframes scroll-up {
+  0% {
+    -moz-transform: translateY(100%);
+    /* Browser bug fix */
+    -webkit-transform: translateY(100%);
+    /* Browser bug fix */
+    transform: translateY(30%);
+  }
+  100% {
+    -moz-transform: translateY(-100%);
+    /* Browser bug fix */
+    -webkit-transform: translateY(-100%);
+    /* Browser bug fix */
+    transform: translateY(-100%);
+  }
+}
+
+/* line 218, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hexa {
+  border: 0px;
+  float: left;
+  text-align: center;
+  height: 35px;
+  width: 60px;
+  font-size: 22px;
+  background: #f0f0f0;
+  color: #3c3c3c;
+  position: relative;
+  margin-top: 15px;
+}
+
+/* line 231, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hexa:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #f0f0f0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  top: -15px;
+}
+
+/* line 243, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hexa:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 15px solid #f0f0f0;
+  bottom: -15px;
+}
+
+/* line 255, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.timeline {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+/* line 263, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  background: #d5d5d5;
+  background: -moz-linear-gradient(top, rgba(213, 213, 213, 0) 0%, #d5d5d5 8%, #d5d5d5 92%, rgba(213, 213, 213, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
+  background: -webkit-linear-gradient(top, rgba(213, 213, 213, 0) 0%, #d5d5d5 8%, #d5d5d5 92%, rgba(213, 213, 213, 0) 100%);
+  background: -o-linear-gradient(top, rgba(213, 213, 213, 0) 0%, #d5d5d5 8%, #d5d5d5 92%, rgba(213, 213, 213, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(213, 213, 213, 0) 0%, #d5d5d5 8%, #d5d5d5 92%, rgba(213, 213, 213, 0) 100%);
+  background: linear-gradient(to bottom, rgba(213, 213, 213, 0) 0%, #d5d5d5 8%, #d5d5d5 92%, rgba(213, 213, 213, 0) 100%);
+  z-index: 5;
+}
+
+/* line 282, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.timeline li {
+  padding: 2em 0;
+}
+
+/* line 286, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.timeline .hexa {
+  width: 16px;
+  height: 10px;
+  position: absolute;
+  background: #00c4f3;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -30px;
+  margin-top: 0;
+}
+
+/* line 300, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.timeline .hexa:before {
+  border-bottom: 4px solid #00c4f3;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  top: -4px;
+}
+
+/* line 307, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.timeline .hexa:after {
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-top: 4px solid #00c4f3;
+  bottom: -4px;
+}
+
+/* line 314, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.direction-l,
+.direction-r {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 321, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.flag-wrapper {
+  text-align: center;
+  position: relative;
+}
+
+/* line 326, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.flag {
+  position: relative;
+  display: inline;
+  background: white;
+  font-weight: 600;
+  z-index: 15;
+  padding: 6px 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+/* line 337, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.direction-l .flag:after,
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  height: 0;
+  width: 0;
+  margin-left: -8px;
+  border: solid transparent;
+  border-bottom-color: white;
+  border-width: 8px;
+  pointer-events: none;
+}
+
+/* line 352, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+/* line 358, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+/* line 364, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.time-wrapper {
+  display: block;
+  position: relative;
+  margin: 4px 0 0 0;
+  z-index: 14;
+  line-height: 1em;
+  vertical-align: middle;
+  color: #fff;
+}
+
+/* line 374, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.direction-l .time-wrapper {
+  float: none;
+}
+
+/* line 378, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.direction-r .time-wrapper {
+  float: none;
+}
+
+/* line 382, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.time {
+  background: #00c4f3;
+  display: inline-block;
+  padding: 8px;
+}
+
+/* line 388, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.desc {
+  position: relative;
+  margin: 1em 0 0 0;
+  padding: 1em;
+  background: #fefefe;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+}
+
+/* line 399, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.direction-l .desc,
+.direction-r .desc {
+  position: relative;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  z-index: 15;
+}
+
+@media (min-width: 768px) {
+  /* line 408, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .timeline {
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  /* line 414, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  /* line 422, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .timeline .hexa {
+    left: -28px;
+    right: auto;
+    top: 8px;
+  }
+  /* line 428, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .timeline .direction-l .hexa {
+    left: auto;
+    right: -28px;
+  }
+  /* line 433, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-l {
+    position: relative;
+    width: 310px;
+    float: left;
+    text-align: right;
+  }
+  /* line 440, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-r {
+    position: relative;
+    width: 310px;
+    float: right;
+    text-align: left;
+  }
+  /* line 447, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .flag-wrapper {
+    display: inline-block;
+  }
+  /* line 451, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .flag {
+    font-size: 18px;
+  }
+  /* line 455, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-l .flag:after {
+    left: auto;
+    right: -16px;
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: #fefefe;
+    border-width: 8px;
+  }
+  /* line 465, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-r .flag:after {
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: #fefefe;
+    border-width: 8px;
+    left: -8px;
+  }
+  /* line 474, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .time-wrapper {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+  }
+  /* line 480, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-l .time-wrapper {
+    float: left;
+  }
+  /* line 484, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-r .time-wrapper {
+    float: right;
+  }
+  /* line 488, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .time {
+    padding: 5px 10px;
+  }
+  /* line 492, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-r .desc {
+    margin: 1em 0 0 0.75em;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 498, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .timeline {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  /* line 504, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-l {
+    position: relative;
+    width: 380px;
+    float: left;
+    text-align: right;
+  }
+  /* line 511, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+  .direction-r {
+    position: relative;
+    width: 380px;
+    float: right;
+    text-align: left;
+  }
+}
+
+/*timeline end style*/
+/*about us end*/
+/* contact us style*/
+/* contact us style end*/
+/*car img effect*/
+/* line 528, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+/* line 538, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+/* line 552, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+/* line 559, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect h5 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  padding: 10px;
+}
+
+/* line 574, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+/* line 589, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+/* line 593, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect:hover img {
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/* line 599, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 604, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect:hover h5, .hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0px);
+  -webkit-transform: translatey(0px);
+  transform: translatey(0px);
+}
+
+/* line 612, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.hovereffect:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+/* contact popup style */
+/* line 621, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#myForm {
+  margin: 5px auto;
+}
+
+/* line 625, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#contact {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  margin: 4em auto;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: teal;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  right: -35px;
+  margin-bottom: 0;
+  transform: rotate(-90deg);
+}
+
+/* line 647, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#contact:hover {
+  background: #666;
+}
+
+/* line 651, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#contact:active {
+  background: #444;
+}
+
+/* line 655, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#contactForm {
+  display: none;
+  border: 6px solid #0094ff;
+  padding: 4em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 669, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+input,
+textarea {
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  width: 280px;
+  padding: 5px;
+}
+
+/* line 678, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+/* line 683, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#formBtnSubmit, #formBtnReset {
+  width: 140px;
+  display: inline-block;
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  margin-top: 5px;
+}
+
+/* contact popup end*/
+/* anthony car list style*/
+/* line 699, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.btn-new {
+  background-color: #2A3F54;
+}
+
+/* line 703, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#min, #max, #demo, #demoP, .laIn {
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  border: 1px;
+  padding: 1px;
+  justify-content: space-between;
+}
+
+/* line 712, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+.laIn {
+  width: 40px;
+}
+
+/* line 716, F:/html-home/OneDrive - John Abbott College/websitefinalversion/project_final/project_final/styles/scss/project.scss */
+#carNav {
+  margin: auto;
+  width: 80%;
+}
+
+/* car list style end*/
+
+/*# sourceMappingURL=../css/project.map */

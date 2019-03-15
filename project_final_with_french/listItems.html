@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function setFilter(c) {
+            alert(c);
+        }
+    </script>
+    <meta name="description" content="All type of car that NHYL auto have">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="styles/css/project.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- contact popup-->
+    <style>
+        @media only screen and (max-width: 320px) {
+            /*
+            #contact {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                margin: 4em auto;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                background: teal;
+                color: white;
+                font-weight: 700;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid white;
+                position: fixed;
+                top: 80%;
+                left: -80%;
+                margin-bottom: 0;
+                transform: rotate(0deg);
+            } */
+
+            #contactForm {
+                display: none;
+                border: 6px solid #0094ff;
+                padding: 4em;
+                text-align: center;
+                background: #fff;
+                position: fixed;
+                top: 20%;
+                left: -20%;
+                transform: scale(0.5, 0.5);
+                -webkit-transform: scale(0.5, 0.5);
+            }
+
+        }
+
+		@media only screen and (max-width:960px) {
+			.btnleft{
+
+     font-style: normal;
+     font-size: 12px;
+
+
+			}
+
+
+		}
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div id="container">
+        <!-- header -->
+        <header>
+            <div id="compName" class="text-center">
+                <h1 id="mainName" style="font-family:'Shrikhand', cursive;">NHYL Auto</h1>
+            </div>
+            <nav id="myNav" class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-list-ul fa-2x"></i><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item active font-weight-bold"><a class="nav-link text-secondary" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="listItems.html"><i class="fa fa-car"></i>Cars</a>
+                            <div id="drop_item_div_s" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Browse all</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('sedan')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Sedan</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Hatchback')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Hatchback</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Suv')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Suv</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Minivan')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Minivan</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" onclick="getsend('Sports')" target=_blank href="listItems.html"><i class="fa fa-caret-right"></i>&nbsp;Sports</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown font-weight-bold">
+                            <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="service.html"><i class="fa fa-server"></i>Service</a>
+                            <div id="drop_item_div" class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-maintain"><i class="fa fa-caret-right"></i>&nbsp;maintain</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-repair"><i class="fa fa-caret-right"></i>&nbsp;repair</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-bodyWork"><i class="fa fa-caret-right"></i>&nbsp;bodyWork</a>
+                                <a class="dropdown-item font-weight-bold text-secondary list-Created" href="service.html#anchor-carWash"><i class="fa fa-caret-right"></i>&nbsp;carWash</a>
+                            </div>
+                        </li>
+                        <li class="nav-item font-weight-bold"><a class="nav-link text-secondary" href="about.html"><i class="fa fa-users"></i>About Us</a></li>
+                    </ul>
+                </div>
+                <form action="page_fr/listItems_fr.html">
+                    <button id="btn_en" class="btn btn-link navbar-right mr-4 font-weight-bold " type="submit">Fr</button>
+                </form>
+            </nav>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item ml-5"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item " aria-current="page">Cars</li>
+                </ol>
+            </nav>
+        </header>
+        <!-- end header -->
+        <!-- content-->
+        <article>
+            <!--
+        diplay choosing options
+
+             -->
+            <!--
+        <select class="selectpicker" style="display: none;">
+
+
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+
+        </select>
+
+        <select class="selectpicker" data-style="btn-info">
+            <option>Automatic</option>
+            <option>manual</option>
+
+        </select>
+            -->
+            <!--<select class="custom-select w-25 mt-1 sm-3" id="modelYear">
+            <option selected>model Year</option>
+            <option value="1">2018</option>
+            <option value="2">2017</option>
+            <option value="3">2016</option>
+            <option value="3" disabled>2015</option>
+        </select>
+        <select class="custom-select w-25 mt-1 sm-3">
+            <option selected>transmition type</option>
+            <option value="1">automatic</option>
+            <option value="2">manual</option>
+        </select>-->
+
+            <div id="carNav">
+                <div class="row">
+                    <div class="col-sm-3">
+
+                        <div class="dropdown  mt-1 mr-0  position-relative">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                model Year
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2017</a>
+                                <a class="dropdown-item" href="#">2016</a>
+                                <a class="dropdown-item disabled" href="#">2015</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="dropdown  mt-1  w-25 ">
+                            <button type="button" class="btn  btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                transmition type
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">automatic</a>
+                                <a class="dropdown-item" href="#">manual</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!--<pre>what is your budget:</pre>-->
+                        <div class="slidecontainer">
+                            <label for="min" class="laIn btnleft">min</label>
+                            <input type="text"  class="btnleft" value="1000" id="min" disabled />
+                            <input type="range" min="1000" max="10000" value="50" step="500" class="slider btnleft" id="myRange">
+                            <p id="demoP" class="btnleft">Value: <span class="btnleft"  id="demo"></span></p>
+                            <label class="laIn btnleft" for="max">max</label>
+                            <input type="text"  class="btnleft" value="10000" id="max" disabled />
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <h2 class="text-center">Inventory</h2>
+            <!-- album -->
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row" id="sidan">
+                        <div class="col-md-4 ">
+                            <div class="card mb-4 box-shadow">
+                                <a href="cardetail.html">
+                                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/listitems-1.jpeg" data-holder-rendered="true">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text"> 2017 20,000$ mercedes car automatic  proper A1 full  options sedan </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+                                        </div>
+                                        <small class="text-muted btnleft">2 hours</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/listitems-2.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text"> 2018 jaguar car 5000$ manual with all jaguaro ptions</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm  btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm  btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+
+                                        </div>
+                                        <small class="text-muted btnleft">8 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/listitems-3.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text">2018 mercedes 10000$ sport  manual your way for real driving</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft ">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+
+                                        </div>
+                                        <small class="text-muted btnleft">10 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="Hatchback">
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/listitems-9.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text">mercedes car  special edition 2016 automatic suv </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+                                        </div>
+                                        <small class="text-muted btnleft">11 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/listed_hatchback.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text">Hatch Back cars with manual transmition  model 2017 </p>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+
+                                        </div>
+                                        <small class="text-muted btnleft">9 days</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/sports.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text">sport cars with wonderfull option  mercedes 2016 automatic transmition </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+
+                                        </div>
+                                        <small class="text-muted btnleft">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="suv">
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/listed_suv.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text">minivan mitsubishi car automatic 2016  3200</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+
+                                        </div>
+                                        <small class="text-muted btnleft">1 month</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/listitems-7.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text">minivan minicoper 2018 3500 manual  </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+
+                                        </div>
+                                        <small class="text-muted btnleft">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="images/listitems-8.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                <div class="card-body">
+                                    <p class="card-text">Bmw car  sport  2017 4000 manual</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <form action="cardetail.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-primary btnleft">More Details</button>
+                                            </form>
+                                            <form action="contact.html">
+                                                <button type="submit" class="btn btn-sm btn-outline-danger btnleft">Book Appointment</button>
+                                            </form>
+
+                                        </div>
+                                        <small class="text-muted btnleft">2 months</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end content-->
+        <!-- footer -->
+         <footer  id="footer">
+                    <div class="table-responsive" id="divReset">
+                        <table class="table" >
+                            <tr class="row">
+                                <td id="about" class="col-sm">
+
+                                   <ul>
+                                        <li><b>About</b></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Service</a></li>
+                                        <li><a href="sitmap.html">Sitemap</a></li>
+                                        <li><a href="#">Privacy policy</a></li>
+                                        <li><a href="#">Terms and conditions</a></li>
+                                    </ul>
+                                </td>
+                                <td id="address" class="col-sm">
+                                    <b>Location</b><br>
+                                    <div class="col-sm">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37686.81288221143!2d-73.96580146302851!3d45.4075422919234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc938500caad3a7%3A0xd807d74a59dcffcf!2sJohn+Abbott+College!5e0!3m2!1sen!2sca!4v1529528326401" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </td>
+                                <td id="hours" class="col-sm">
+                                    <p><b>Business hours</b></p>
+                                    <ul class="list-group">
+                                        <li style="font-size:1.5vw;">Monday to Saturday from 10:30 am - 6:00 pm</li>
+                                        <li style="font-size:1.5vw;">Sunday: Closed</li>
+                                    </ul>
+                                </td>
+                                <td id="socialMedia" class="col-sm">
+                                    <b style="float: inherit">Social Media</b><br>
+                                    <a href="#" class="fa fa-facebook-square wise" id="wise1"></a>
+                                    <a href="#" class="fa fa-twitter wise" id="wise2"></a>
+                                    <a href="#" class="fa fa-google-plus wise" id="wise3"></a>
+                                    <a href="#" class="fa fa-instagram wise" id="wise4"></a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div id="copyRight" class="no-gutter">
+                        &copy; 2018 NHYL Auto - All rights reserved.
+                        All reproduction in whole or in part, is strictly prohibited without the explicit consent of NHYL  Auto.
+                    </div>
+        </footer>
+        <!-- end footer -->
+        <!-- contact popup-->
+        <div id="contactContainer">
+            <div id="contact">Contact</div>
+
+            <div id="contactForm">
+
+                <h1>Inquire now</h1>
+                <small>We are happy to hear from you.</small>
+
+                <form id="myForm" action="#">
+                    <input class="form-control" placeholder="Name" type="text" required />
+                    <input class="form-control" placeholder="Email" type="email" required />
+                    <input class="form-control" placeholder="Subject" type="text" required />
+                    <textarea class="form-control" placeholder="Comment"></textarea>
+                    <input class="form-control" id="formBtnSubmit" type="submit" />
+                    <input class="form-control" id="formBtnReset" type="reset" />
+                </form>
+            </div>
+        </div>
+        <script src="scripts/popup.js"></script> <!-- contact popup script-->
+    </div>
+</body>
+</html>
